@@ -9,10 +9,15 @@
   "private": false,
   "scripts": {
     "start": "nodemon server.js",
-    "start:prod": "NODE_ENV=production nodemon server.js"
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "test": "mocha app.test.js"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
+    "chai": "^4.3.10",
+    "chai-http": "^4.4.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.3",
+    "supertest": "^6.3.3"
   },
   "dependencies": {
     "dotenv": "^8.2.0",

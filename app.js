@@ -18,7 +18,7 @@ const getFood = (req, res) => {
       throw error;
     }
     res.status(200).json({
-      status: 'sucess',
+      status: 'success',
       requestTime: req.requestTime,
       data: results.rows,
     });
@@ -33,7 +33,7 @@ const getFoodById = (req, res) => {
       throw error;
     }
     res.status(200).json({
-      status: 'sucess',
+      status: 'success',
       requestTime: req.requestTime,
       data: results.rows,
     });
